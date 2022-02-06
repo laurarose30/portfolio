@@ -3,7 +3,7 @@ body{
    
     overflow: scroll;
     background-image: url('background.jpg');
-    background-size: 1400px;
+    background-size: 1800px;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -11,7 +11,7 @@ body{
 #header{
     background: rgba(17, 16, 17, 0.459);
 
-    height: 11vh;
+    height: 15vh;
     padding-top: 1px;
     
     
@@ -22,7 +22,7 @@ body{
     float: right;
     padding-right: 2rem;
     padding-top: 3.5rem;
-    height: 20px;
+    height: 18px;
    
     
    
@@ -91,10 +91,11 @@ a{
 
 
 #logo{
-    height: 5vh;
-    width: 16vh;
+    height: 4vh;
+    width: 14vh;
     padding-left: 20px;
     float: left;
+    padding-top: 1em;
     
     
 
@@ -104,6 +105,7 @@ a{
     cursor: pointer;
     float: right;
     padding-right: 0px;
+    padding-bottom: 1rem;
     
     
 
@@ -138,6 +140,7 @@ a{
     .hamburger{
         display: block;
         cursor: pointer;
+      
     }
 
     .nav.active{
@@ -152,9 +155,6 @@ a{
 }
 
 #masthead{
-    background: rgba(17, 16, 17, 0.459);
-   
- 
     height: 40vh;
     display: flex;
     align-items: center;
@@ -166,21 +166,30 @@ a{
 
 h1{
     margin:0 auto;
-    font-size: 34px;
+    font-size: 70px;
     letter-spacing: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-right: 10px;
     padding-left:10px;
-    color: floralwhite;
+    color: rgba(255, 250, 240, 0.966);
 }
 #maincontent{
     display: flex;
-    
-    background-color: rgb(255, 255, 255);
     text-align: center;
     
+}
+
+#websitemain{
+    background: rgba( 17, 16, 17, 0.459 );
+    
+    backdrop-filter: blur( 0px );
+    -webkit-backdrop-filter: blur( 0px );
+    border-radius: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    padding:0;
+  
 }
 
 .centertext{
@@ -191,7 +200,61 @@ h1{
 
 .linkimage{
     display: flex;
-    
+  
     padding: 40px;
     
+}
+
+.image{
+    
+  
+    background-color: black;
+    
+   
+}
+
+.aboutme{
+    
+    
+    justify-content: center;
+   
+
+    background-color: rgb(47, 48, 47);
+    
+    
+}
+
+.bio{
+    width: 500px;
+    height:500px;
+    font-size: 40px;
+    
+    background-color: chocolate;
+    
+}
+
+.imagebio{
+    width: 500px;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+#banner{
+    overflow: hidden;
+    
+    white-space: nowrap;
+    font-size: 1.6rem;
+    width: 0;
+    animation: typing 2s forwards;
+    text-align: center;
+  
+}
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 53% }
 }
